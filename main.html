@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Primary Header -->
+    <div>
+      <img src="./header.png" class="company-logo" alt="" /><br /><br /><br />
+    </div>
+    <div class="container text-center">
+      <!-- <p class="fw-bold">
+        Sri Ramakrishna Mission Vidyalaya Polytechnic College
+      </p> -->
+
+      <!-- <p class="space">
+        (An Autonomous and ISO 9001:2015 Certified Institution)
+      </p>
+      <p class="spaces">Coimbatore - 641 020</p> -->
+    </div>
+    <!-- Second Header -->
+    <div class="container text-center">
+      <!-- <p class="fw-semibold">Application Form for</p> -->
+      <!-- <p class="fw-semibold">
+        Admission into I Year Diploma in Engineering Courses 2022-23
+      </p> -->
+    </div>
+    <!-- Table Div -->
+    <div class="container">
+      <table class="table table-bordered border-dark">
+        <tbody>
+          <tr>
+            <td>Application No. : <span class="fw-bold">L</span></td>
+            <td class="text-center">
+              Filled in application should be sent to the Principal <br />on or
+              before:
+            </td>
+            <td>Reg. No : <br />(To be assigned by the office)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="fw-bold space text-center">(To be filled in by applicant)</p>
+    </div>
+
+    <!-- Form Input Started -->
+    <div class="container text-center">
+      <div class="row">
+        <!-- first column -->
+        <div class="col text-start">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label fw-bold"
+              >1.(a) Name of the candidate : <br />(in Block Letters)</label
+            ><br />
+            <input type="text" class="w-75 dotted-input" id="name" />
+            <label
+              for="exampleFormControlInput1"
+              class="form-label fw-bold mt-3"
+              >(b) Father's / Guardian's Name :</label
+            ><br />
+            <input type="text" class="w-75 dotted-input" />
+            <p class="mt-2 small-text">
+              (The name of the guardian should be mentioned only if the parents
+              of the candidate are deceased.)
+            </p>
+            <label
+              for="exampleFormControlInput1"
+              class="form-label fw-bold mt-3"
+              >(c) Mother's Name :</label
+            ><br />
+            <input type="text" class="w-75 dotted-input" />
+            <label
+              for="exampleFormControlInput1"
+              class="form-label fw-bold mt-3"
+              >(d) Address for communication:</label
+            ><br />
+            <input type="text" class="w-75 dotted-input" />
+            <input
+              type="text"
+              class="w-75 dotted-input mt-3"
+              id="father-name"
+            />
+            <input
+              type="text"
+              class="w-75 dotted-input mt-3"
+              id="father-name"
+            />
+
+            <div class="container ms-4 mt-3 d-flex">
+              <p class="pin-postion">PIN</p>
+              <input class="split-input" type="text" />
+              <input class="split-input" type="text" />
+              <input class="split-input" type="text" />
+              <input class="split-input" type="text" />
+              <input class="split-input" type="text" />
+              <input class="split-input" type="text" />
+            </div>
+            <div class="container ms-4 mt-3 d-flex">
+              <p class="pin-postion">Phone No</p>
+              <input type="text" class="dotted-input" />
+            </div>
+            <div class="container ms-4 mt-3 d-flex">
+              <p class="pin-postion">Mobile Phone No</p>
+              <input type="text" class="dotted-input" />
+            </div>
+          </div>
+        </div>
+        <!-- second column -->
+        <div class="col">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Name of the Course : ( In the order of preference <br />
+              <span class="fw-bold width-adj"
+                >DCE,DME,DEEE & DIT)
+              </span> </label
+            ><br />
+          </div>
+          <div class="mb-3 d-flex">
+            <p class="fw-bold">1</p>
+            <input type="text" class="c-position" name="course-name1" />
+            <p class="fw-bold ms-4">3</p>
+            <input type="text" class="c-position" name="course-name3" />
+          </div>
+          <div class="mb-3 d-flex">
+            <p class="fw-bold">2</p>
+            <input type="text" class="c-position" name="course-name1" />
+            <p class="fw-bold ms-4">4</p>
+            <input type="text" class="c-position" name="course-name3" />
+          </div>
+          <div class="mb-3 mt-5 photo-place">
+            <p class="mt-5">
+              Affix Passport <br />
+              Size Photograph
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-flex">
+      <p class="fw-bold Aadhaar-postion">
+        (e) Aadhaar Number / Aadhaar Enrollment Number:
+      </p>
+      <input type="text" class="dotted-inputs" />
+    </div>
+
+    <div class="container d-flex">
+      <p class="fw-bold Aadhaar-postion">
+        (f) Occupation of Father/Mother/Guardian:
+      </p>
+      <input type="text" class="dotted-inputs" />
+      <p class="fw-bold Aadhaar-postion">(g) Annual Income: Rs</p>
+      <input type="text" class="dotted-inputs" />
+    </div>
+
+    <div class="container mt-2 d-flex">
+      <p class="fw-bold date-postion">2.Date of Birth (Christian Era)</p>
+      <input class="ms-5 split-input" type="text" />
+      <input class="split-input" type="text" />
+      <input class="split-input" type="text" />
+      <input class="split-input" type="text" />
+      <input class="split-input" type="text" />
+      <input class="split-input" type="text" />
+      <input class="split-input" type="text" />
+      <input class="split-input" type="text" />
+    </div>
+    <div class="container">
+      <p>(As per SSLC or its equivalent)</p>
+      <p>
+        (Note: Day and month should be entered only as a two digit number, e.g.,
+        3-1-2004 should be entered as)
+      </p>
+    </div>
+    <div class="container mt-2 d-flex">
+      <p class="date-postion">3.(a) Community :</p>
+      <div class="d-flex spaced">
+        <div class="ms-5">
+          <p>OC</p>
+          <input class="split-input" type="text" />
+        </div>
+        <div class="ms-5">
+          <p>BC</p>
+          <input class="split-input" type="text" />
+        </div>
+        <div class="ms-5">
+          <p>BCM</p>
+          <input class="split-input" type="text" />
+        </div>
+        <div class="ms-5">
+          <p>MBC/DNC</p>
+          <input class="split-input" type="text" />
+        </div>
+        <div class="ms-5">
+          <p>SC</p>
+          <input class="split-input" type="text" />
+        </div>
+        <div class="ms-5">
+          <p>SCA</p>
+          <input class="split-input" type="text" />
+        </div>
+        <div class="ms-5">
+          <p>ST</p>
+          <input class="split-input" type="text" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3 d-flex">
+      <p class="ms-2 w-50 date-postion">(b) Caste :</p>
+      <input type="text" class="w-50 input-border" />
+    </div>
+    <div class="container mt-3 d-flex">
+      <p class="ms-2 w-50 date-postion">(c) Community Certificate Number** :</p>
+      <input type="text" class="w-50 input-border" />
+    </div>
+
+    <div class="container mt-3 d-flex">
+      <p class="ms-2 w-50 date-postion">
+        (d) Designation of the Officer issuing the Community <br />
+        Certificate and date of issue** :
+      </p>
+      <input type="text" class="w-50 input-border" />
+    </div>
+
+    <div class="container mt-4">
+      <p>
+        <span class="fw-bold">Note</span>: Please do not enclose ORIGINAL
+        certificates along with the application.
+      </p>
+      <div class="container">
+        <p>
+          * If the Director of Technical Education issues directions to extend
+          the last date for submission of application - the date will change.
+        </p>
+        <p>
+          ** OC candidates need not fill these information { 3(c) and 3(d) }
+        </p>
+      </div>
+    </div>
+
+    <!-- Table Div -->
+    <div class="container">
+      <table class="table table-bordered border-dark">
+        <thead>
+          <tr>
+            <th scope="col" colspan="10">
+              4.Marks obtained in HSC / equivalent examination :
+            </th>
+          </tr>
+          <tr>
+            <th scope="col" class="text-center" colspan="5">
+              HSC Marks(Academic / Vocational)
+            </th>
+            <th scope="col" class="text-center" colspan="5">
+              +2 Years ITI Marks / Equivalent
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="text-center">Subject</th>
+            <th scope="row" class="text-center" colspan="3">Marks Obtained</th>
+            <th scope="row" class="text-center">
+              Maximum <br />
+              Marks
+            </th>
+            <th scope="row" class="text-center">Subjects</th>
+            <th scope="row" class="text-center" colspan="3">
+              Marks <br />
+              Obtained
+            </th>
+            <th scope="row" class="text-center">
+              Maximum <br />
+              Marks
+            </th>
+          </tr>
+          <tr>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center">100</td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+          </tr>
+          <tr>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center">100</td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+          </tr>
+          <tr>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center">100</td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+          </tr>
+          <tr>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center">100</td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+          </tr>
+          <tr>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center">100</td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+          </tr>
+          <tr>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center">100</td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+          </tr>
+          <tr>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+          </tr>
+          <tr>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+          </tr>
+          <tr>
+            <td class="fw-bold text-center">Total</td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="fw-bold text-center">600</td>
+            <td class="fw-bold text-center">Total</td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+          </tr>
+          <tr>
+            <td colspan="10" class="text-center">
+              (In case of CBSE, the Marks obtained and Maximum Marks may be
+              entered accordingly)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        (If the marks certificate is found to be bogus, it will lead to
+        cancellation of admission besides criminal action against the
+        candidate).
+      </p>
+    </div>
+    <!-- Table Div -->
+
+    <div class="container">
+      <p>5. Details of Studies :</p>
+      <table class="table table-bordered border-dark">
+        <thead>
+          <tr>
+            <th scope="col">SI. NO.</th>
+            <th scope="col">class</th>
+            <th scope="col">
+              Month and year <br />
+              of passing
+            </th>
+            <th scope="col">
+              HSC Academic / <br />
+              HSC Vocational
+            </th>
+            <th scope="col">Name of the School and Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1.</th>
+            <td class="fw-semibold">X Std.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">2.</th>
+            <td class="fw-semibold">XI Std.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">3.</th>
+            <td class="fw-semibold">HSC / Eqivalent</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container d-flex">
+      <p class="w-50">6. Nationality :</p>
+      <p class="w-50">7. Religion :</p>
+    </div>
+    <div class="container d-flex">
+      <p class="w-50">8. Name of Native District :</p>
+      <p class="w-50">9. Mother Tongue :</p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>10. Name of parent/guardian and their official address :</p>
+          <input type="text" class="w-75 dotted-input" />
+          <input type="text" class="w-75 dotted-input mt-3" id="father-name" />
+          <input type="text" class="w-75 dotted-input mt-3" id="father-name" />
+        </div>
+        <div class="col d-flex">
+          <div class="text-area custom-heigth">
+            <div class="d-flex logo-div">
+              <img src="./phone.png" class="phone-logo" alt="" />
+              <p>office :</p>
+            </div>
+            <p class="align-item">Resi :</p>
+            <p class="align-item">Mobile :</p>
+            <p class="align-item">e-mail :</p>
+          </div>
+          <!-- <div>
+            <input type="text" class="custom-heigth" />
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <p>11. Do you need Hostel Facility : Yes / No</p>
+    </div>
+    <div class="container mt-4 d-flex justify-content-between">
+      <p class="fw-bold">Date :</p>
+      <p class="fw-bold">Signature of the Candidate</p>
+    </div>
+
+    <br /><br /><br /><br />
+    <div class="container container-border">
+      <p class="text-decoration-underline fw-bold text-center">CERTIFICATE</p>
+      <p class="ms-5 text-center">
+        (To be signed by the Head of Institution where the candidate last
+        studied or by an officer of Grade A or B) Certified that the entries
+        made in respect of Date of Birth, Community, Caste and the Marks
+        obtained in the qualifying exam are found to be correct [Item no.2,
+        3(a), 3(b) and 4].
+      </p>
+      <p class="para-left">Signature :</p>
+      <div class="d-flex">
+        <p>Place :</p>
+        <p class="paras-left">Name & Designation :</p>
+      </div>
+      <div class="d-flex">
+        <p>Date :</p>
+        <p class="paras-lefts">Office seal :</p>
+      </div>
+    </div>
+
+    <div class="container mt-4 text-center">
+      <button type="button" class="btn btn-primary" onclick="window.print()">
+        Print
+      </button>
+    </div>
+    <br />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
